@@ -1,6 +1,132 @@
 country_decisions = {
-	#Corse (Decision to merge if Metropolitaine added)
-	#Sarde (Decision to merge if Metropolitaine added)
+    annihilate_the_patois = {
+        major = yes
+        potential = {
+            is_institution_enabled = printing_press
+            culture_group = french
+            NOT = { culture = metropolitaine }
+        }
+
+        allow = {
+            total_development = 1000
+            has_institution = printing_press
+            NOT = {
+                any_province = {
+                    continent = europe
+                    culture = ROOT
+                    NOT = { owned_by = ROOT }
+                }
+            }
+        }
+
+        effect = {
+            add_country_modifier = {
+                name = "annihilating_patois"
+                duration = -1
+            }
+
+            every_owned_province = {
+                limit = { culture = ROOT }
+                change_culture = metropolitaine
+            }
+            set_ruler_culture = metropolitaine
+            set_heir_culture = metropolitaine
+            if = {
+                limit = { consort_culture = ROOT }
+                set_consort_culture = metropolitaine
+            }
+            change_primary_culture = metropolitaine
+        }
+
+        ai_will_do = {
+            factor = 10
+            # TODO maybe add some more influences for republican France
+            modifier = {
+                factor = 0
+                # Ancien régime never showed much interest in the patois
+                NOT = { government = republic }
+            }
+        }
+    }
+
+    # Note: adapted from the German standardization decisions, not sure if
+    # this is where C1CK was going to go with it
+    standardise_corse_decision = {
+        major = yes
+        potential = {
+            culture = metropolitaine
+            accepted_culture = corse
+        }
+
+        provinces_to_highlight = {
+            corse_culture_region = yes
+            NOT = { owned_by = ROOT }
+            culture = corse
+        }
+
+        allow = {
+            custom_trigger_tooltip = {
+                tooltip = corsica_gallicized_trigger_tt
+                europe = {
+                    OR = {
+                        corse_culture_region = yes
+                        AND = {
+                            owned_by = ROOT
+                            culture = corse
+                        }
+                    }
+                    type = all
+                }
+            }
+        }
+
+        effect = {
+            every_owned_province = {
+                limit = { culture = corse }
+                change_culture = metropolitaine
+            }
+        }
+    }
+
+    # Note: adapted from the German standardization decisions, not sure if
+    # this is where C1CK was going to go with it
+    standardise_sarde_decision = {
+        major = yes
+        potential = {
+            culture = metropolitaine
+            accepted_culture = sarde
+        }
+
+        provinces_to_highlight = {
+            sarde_culture_region = yes
+            NOT = { owned_by = ROOT }
+            culture = sarde
+        }
+
+        allow = {
+            custom_trigger_tooltip = {
+                tooltip = sardinia_gallicized_trigger_tt
+                europe = {
+                    OR = {
+                        sarde_culture_region = yes
+                        AND = {
+                            owned_by = ROOT
+                            culture = sarde
+                        }
+                    }
+                    type = all
+                }
+            }
+        }
+
+        effect = {
+            every_owned_province = {
+                limit = { culture = sarde }
+                change_culture = metropolitaine
+            }
+        }
+    }
+
 	standardise_ayisyen_decision = {
 		potential = {
 			has_country_flag = CI_chosen_creole_flag

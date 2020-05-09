@@ -12,16 +12,27 @@
  MAU_ADJ:0 "Mauritien"
 
   #Modifiers
+ annihilating_patois:0 "Annihilating Patois"
+ desc_annihilating_patois:0 "Our country is pursuing a policy of forced minority language assimilation"
  akademi_kreyol_ayisyen:0 "Akademi Kreyòl Ayisyen"
  desc_akademi_kreyol_ayisyen:0 "The Akademi Kreyòl Ayisyen regulates the orthography and development of our language, and encourages its use in education and government."
  french_new_catholic_settlements:0 "New Catholic Settlements"
  desc_french_new_catholic_settlements:0 "These provinces are filled with zeal after the recent expulsion of infidels, many devout Catholics are helping repopulate the area"
   #Decisions
+ annihilate_the_patois_title:0 "Annihilate the Patois"
+ annihilate_the_patois_desc:0 "With the introduction of the printing press and increasing centralization of the state, we now have the means to annihilate the various patois spoken far from our capital. Some might not be eager to adopt our speech though..."
+ standardise_corse_decision_title:0 "Standardise Corse"
+ standardise_corse_decision_desc:0 "Integrates the divergent idioms of gallicized Corsica with Metropolitan French"
+ standardise_sarde_decision_title:0 "Standardise Sarde"
+ standardise_sarde_decision_desc:0 "Integrates the divergent idioms of gallicized Sardinia with Metropolitan French"
  standardise_ayisyen_decision_title:0 "Standardise Kreyòl Ayisyen"
  standardise_ayisyen_decision_desc:0 "This decision will create the Akademi Kreyòl Ayisyen"
  form_dual_monarchy_of_england_and_france_title:0 "Unify the Crowns of England and France"
  form_dual_monarchy_of_england_and_france_desc:0 "This decision will form the Union of England and France"
  form_dual_monarchy_of_england_and_france_FRA_tooltip:0 "The player must own the whole of the France region, have Standard French or Standard Occitan as a Primary Culture and have Reeducated the whole of England to the Franglais Culture."
+  #Triggers
+ corsica_gallicized_trigger_tt:0 "All of Corsica is part of [Root.GetName] and speaks Corse"
+ sardinia_gallicized_trigger_tt:0 "All of Sardinia is part of [Root.GetName] and speaks Sarde"
   #Events
  french_expansion.title:0 "Expansion of French Culture"
  french_expansion.desc:0 "The influence of French cultures near to the province of [Root.GetName] has caused the people living there to adopt our languages and customs, they are now speaking our variety of French!"

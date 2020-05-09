@@ -7,7 +7,7 @@ province_event = { #French expansion (Home Region)
 	picture = RELIGIOUS_CONVERSION_eventPicture
 
 	trigger = {
-		owner = { culture_group = french }
+		owner = { culture = metropolitaine }
 		NOT = { culture = OWNER }
 		OR = { #Permit AI to settle accepted cultures since they don't understand
 			has_owner_accepted_culture = no
@@ -101,7 +101,7 @@ province_event = { #Castillane expansion
 	picture = RELIGIOUS_CONVERSION_eventPicture
 
 	trigger = {
-		owner = { culture_group = french }
+		owner = { culture = metropolitaine }
 		NOT = { culture = castillane }
 		OR = { #Permit AI to settle accepted cultures since they don't understand
 			has_owner_accepted_culture = no
@@ -197,7 +197,7 @@ province_event = { #Galicien expansion
 	picture = RELIGIOUS_CONVERSION_eventPicture
 
 	trigger = {
-		owner = { culture_group = french }
+		owner = { culture = metropolitaine }
 		NOT = { culture = galicien }
 		OR = { #Permit AI to settle accepted cultures since they don't understand
 			has_owner_accepted_culture = no
@@ -293,7 +293,7 @@ province_event = { #Valencien expansion
 	picture = RELIGIOUS_CONVERSION_eventPicture
 
 	trigger = {
-		owner = { culture_group = french }
+		owner = { culture = metropolitaine }
 		NOT = { culture = valencien }
 		OR = { #Permit AI to settle accepted cultures since they don't understand
 			has_owner_accepted_culture = no
@@ -389,7 +389,7 @@ province_event = { #Apennine Central expansion
 	picture = RELIGIOUS_CONVERSION_eventPicture
 
 	trigger = {
-		owner = { culture_group = french }
+		owner = { culture = metropolitaine }
 		NOT = { culture = apennine_central }
 		OR = { #Permit AI to settle accepted cultures since they don't understand
 			has_owner_accepted_culture = no
@@ -485,7 +485,7 @@ province_event = { #Sud Apennine expansion
 	picture = RELIGIOUS_CONVERSION_eventPicture
 
 	trigger = {
-		owner = { culture_group = french }
+		owner = { culture = metropolitaine }
 		NOT = { culture = sud_apennine }
 		OR = { #Permit AI to settle accepted cultures since they don't understand
 			has_owner_accepted_culture = no
@@ -581,7 +581,7 @@ province_event = { #Nouveau Provençal expansion
 	picture = RELIGIOUS_CONVERSION_eventPicture
 
 	trigger = {
-		owner = { culture_group = french }
+		owner = { culture = metropolitaine }
 		NOT = { culture = nouveau_provencal }
 		OR = { #Permit AI to settle accepted cultures since they don't understand
 			has_owner_accepted_culture = no
@@ -677,7 +677,7 @@ province_event = { #Corse expansion
 	picture = RELIGIOUS_CONVERSION_eventPicture
 
 	trigger = {
-		owner = { culture_group = french }
+		owner = { culture = metropolitaine }
 		NOT = { culture = corse }
 		OR = { #Permit AI to settle accepted cultures since they don't understand
 			has_owner_accepted_culture = no
@@ -773,7 +773,7 @@ province_event = { #Sarde expansion
 	picture = RELIGIOUS_CONVERSION_eventPicture
 
 	trigger = {
-		owner = { culture_group = french }
+		owner = { culture = metropolitaine }
 		NOT = { culture = sarde }
 		OR = { #Permit AI to settle accepted cultures since they don't understand
 			has_owner_accepted_culture = no

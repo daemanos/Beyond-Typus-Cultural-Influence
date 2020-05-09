@@ -1,3 +1,9 @@
+#Patois
+annihilating_patois = {
+    # TODO maybe something else
+    same_culture_advisor_cost = -0.1
+    years_of_nationalism = 5
+}
 #Crusader
 french_new_catholic_settlements = {
 	local_development_cost = -0.1
