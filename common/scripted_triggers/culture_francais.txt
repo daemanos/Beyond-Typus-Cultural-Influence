@@ -40,6 +40,89 @@ french_homeland = {
 	}
 }
 
+gallo_culture_region = {
+	OR = {
+		area = brittany_area
+		area = lower_brittany_area
+	}
+}
+
+picard_culture_region = {
+	OR = {
+		area = picardy_area
+		area = flanders_area
+		AND = {
+			area = brabant_area
+			NOT = { province_id = 3061 }
+		}
+		AND = {
+			area = wallonia_area
+			NOT = { province_id = 8014 }
+		}
+		province_id = 96
+		province_id = 7975
+	}
+}
+
+walon_culture_region = {
+	OR = {
+		area = luxembourg_area
+		area = luxembourg_liege_area
+		AND = {
+			area = lower_rhineland_area
+			NOT = { province_id = 3198 }
+		}
+		province_id = 7964
+		province_id = 181
+		province_id = 8014
+		province_id = 3061
+		province_id = 8017
+		province_id = 3060
+		province_id = 2975
+		province_id = 85
+	}
+}
+
+lorrain_culture_region = {
+	OR = {
+		area = lorraine_area
+		province_id = 3071
+		province_id = 7953
+		province_id = 3198
+		province_id = 1880
+		province_id = 7943
+		province_id = 75
+		province_id = 7944
+		province_id = 1761
+		province_id = 78
+	}
+}
+
+gascon_culture_region = {
+	OR = {
+		area = upper_gascony
+		area = pyrenees_area
+		AND = {
+			area = guyenne_area
+			NOT = { province_id = 3081 }
+			NOT = { province_id = 7930 }
+			NOT = { province_id = 194 }
+		}
+	}
+}
+
+arpetan_culture_region = {
+	OR = {
+		area = lyonnais_area
+		area = savoy_dauphine_area
+		area = romandie_area
+		province_id = 3045
+		province_id = 7910
+		province_id = 204
+		province_id = 3089
+	}
+}
+
 #####################Latin (Assimilated) Cultures#####################
 
 castillane_culture_region = {
